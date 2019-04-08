@@ -5,26 +5,24 @@
 }
 
 body{
-    background: red;
+    /* background: #95a5a6; */
 }
 .loader{
-    width: 50px;
-    height: 60px;
-    background: red;
+    width: 70px;
+    height: 70px;
+    
     position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     margin: -30px auto 0;
     text-align: center;
-    
-    
 }
 
 .loader> div{
-    background-color: #ffffff;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     height: 100%;
-    width: 6px;
+    width: 10px;
     display: inline-block;
     animation: loader3 1s infinite ease-in-out;
 }
@@ -35,9 +33,13 @@ body{
     40%,
     100%{
         transform: scaleY(0.4);
+        background-position: 0px 0px;
     }
+
+   
     20%{
         transform: scaleY(1.0);
+        background-position: 0 -200px;
     }
 
 }
